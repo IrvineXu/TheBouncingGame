@@ -56,27 +56,7 @@ public class AnglePhysicsEngine extends AngleObject
 		}
 	}
 
-	/*
-	 * protected void kynetics () { int steps=1;
-	 * 
-	 * for (int o=0;o<mChildsCount;o++) { int dX=(int)
-	 * Math.abs(mChildO.mDelta.mX); int dY=(int) Math.abs(mChildO.mDelta.mX); if
-	 * (dX>steps) steps=dX; if (dY>steps) steps=dY; }
-	 * 
-	 * for (int s=0;s<steps;s++) { for (int o=0;o<mChildsCount;o++) { if
-	 * ((mChildO.mDelta.mX!=0)||(mChildO.mDelta.mY!=0)) { //Collision
-	 * mChildO.mVisual.mCenter.mX+=mChildO.mDelta.mX/steps;
-	 * mChildO.mVisual.mCenter.mY+=mChildO.mDelta.mY/steps; for (int
-	 * c=0;c<mChildsCount;c++) { if (c!=o) { if (mChildO.collide(mChilds[c])) {
-	 * mChildO.mVisual.mCenter.mX-=mChildO.mDelta.mX/steps;
-	 * mChildO.mVisual.mCenter.mY-=mChildO.mDelta.mY/steps; mChildO.mDelta
-	 * .mX=mChildO.mVelocity.mX*AngleMainEngine.secondsElapsed; mChildO.mDelta
-	 * .mY=mChildO.mVelocity.mY*AngleMainEngine.secondsElapsed; mChilds[c].mDelta
-	 * .mX=mChilds[c].mVelocity.mX*AngleMainEngine.secondsElapsed;
-	 * mChilds[c].mDelta
-	 * .mY=mChilds[c].mVelocity.mY*AngleMainEngine.secondsElapsed; break; } } } }
-	 * } } }
-	 */
+
 	protected void kynetics(float secondsElapsed)
 	{
 		for (int o = 0; o < mChildsCount; o++)
